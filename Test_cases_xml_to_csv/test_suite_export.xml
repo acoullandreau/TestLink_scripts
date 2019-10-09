@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite id="12712" name="SDK" >
+<node_order><![CDATA[13]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="14550" name="Users" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="14682" name="Left Sidebar" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="14873" name="SDK_List_Users_for_a_Group">
+	<node_order><![CDATA[0]]></node_order>
+	<externalid><![CDATA[1856]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify that&nbsp; the&nbsp; user is able to&nbsp; view all users that are created under a group.</p>
+<p>
+	Verify that the user can view users and groups based on credentials</p>
+<p>
+	&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Load the application .</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Load the application .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Log in to the application with User Root credentials .&nbsp;&nbsp;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Login is successful.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Go to User Management section on left sidebar and select an existing group .</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The group list should be displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Go to list of users that are created under this selected group .</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The list of users should be available. No errors should be reported .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[jenkins]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>
+</custom_fields>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Instance level]]></req_spec_title>
+			<doc_id><![CDATA[UM14]]></doc_id>
+			<title><![CDATA[User groups creation/modification/deletion]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Instance level]]></req_spec_title>
+			<doc_id><![CDATA[UM3]]></doc_id>
+			<title><![CDATA[Multiple user support]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+<testcase internalid="14851" name="SDK_Delete_a_Group">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[1853]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	Verify that the&nbsp; root user is able to remove an existing group .</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+]]></summary>
+	<preconditions><![CDATA[]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Load the application .</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Load the application .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Log in to the application with User Root credentials .&nbsp;&nbsp;&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Login is successful.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Go to User Management section and select a group which&nbsp; not contain users .</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The group list should be displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Remove the selected group from list .</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The group should be deleted.No errors should be reported .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Repeat the steps 3,4 for a group which contains users.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The group should be deleted.No errors should be reported .</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[jenkins]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>
+</custom_fields>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Instance level]]></req_spec_title>
+			<doc_id><![CDATA[UM14]]></doc_id>
+			<title><![CDATA[User groups creation/modification/deletion]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+</testsuite><testsuite id="15694" name="Dashboard" >
+<node_order><![CDATA[4]]></node_order>
+<details><![CDATA[]]></details> 
+</testsuite></testsuite><testsuite id="14691" name="Device menu" >
+<node_order><![CDATA[2]]></node_order>
+<details><![CDATA[]]></details> 
+<testsuite id="14692" name="Sidebar" >
+<node_order><![CDATA[1]]></node_order>
+<details><![CDATA[]]></details> 
+
+
+
+<testcase internalid="14712" name="Device_Selection">
+	<node_order><![CDATA[2]]></node_order>
+	<externalid><![CDATA[1836]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-size: 11.7px;">Verify that the user is able to select a device.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	<span style="font-size: 11.7px;">The application used for the tests should have some devices created.</span></p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Log in to the application.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Login should be successful.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Go to SECTION.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Left sidebar zones tree view is loaded correctly.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>
+	Click device.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Device is loaded correctly.</p>
+<p>
+	The middle top sidebar shows name and description of the device.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[jenkins]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>
+</custom_fields>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Navigation panel]]></req_spec_title>
+			<doc_id><![CDATA[DC1]]></doc_id>
+			<title><![CDATA[Single device selection]]></title>
+		</requirement>
+		<requirement>
+			<req_spec_title><![CDATA[Map view features]]></req_spec_title>
+			<doc_id><![CDATA[DC19]]></doc_id>
+			<title><![CDATA[Center on selection from navigation panel]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+</testsuite><testsuite id="14941" name="Search" >
+<node_order><![CDATA[6]]></node_order>
+<details><![CDATA[]]></details> 
+
+<testcase internalid="14719" name="SDK_Node_Search">
+	<node_order><![CDATA[3]]></node_order>
+	<externalid><![CDATA[1837]]></externalid>
+	<version><![CDATA[1]]></version>
+	<summary><![CDATA[<p>
+	<span style="font-size: 11.7px;">Verify that the user is able to search for devices.</span></p>
+]]></summary>
+	<preconditions><![CDATA[<p>
+	The application used for the tests should have some devices created.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>
+	Log in to the application.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Login should be successfully.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>
+	Go to SECTION.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	Sidebar is loaded correctly.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>
+	Click on the search bar</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The list of devices is displayed.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>
+	Start typing a name /label name for a device.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The list is filtered based on the partial match.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[6]]></step_number>
+	<actions><![CDATA[<p>
+	Select a device.</p>
+]]></actions>
+	<expectedresults><![CDATA[<p>
+	The device is shown in the center of the map and the sidebar shows the inforamtion of the device.</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<custom_fields>
+	<custom_field>
+		<name><![CDATA[jenkins]]></name>
+		<value><![CDATA[]]></value>
+	</custom_field>
+</custom_fields>	<requirements>
+		<requirement>
+			<req_spec_title><![CDATA[Navigation panel]]></req_spec_title>
+			<doc_id><![CDATA[DC4]]></doc_id>
+			<title><![CDATA[Search bar]]></title>
+		</requirement>
+	</requirements>
+</testcase>
+
+</testsuite></testsuite></testsuite>
+
+
+

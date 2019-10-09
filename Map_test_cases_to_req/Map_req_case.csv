@@ -1,0 +1,7 @@
+﻿Test category;External ID test case;Name test case;Title req_spec;Doc_Id_req;Req_title
+L1;1651;Assign a custom name to a LM device;Right editing panel;INV12;Device label
+L1;1652;Assign a custom name to a Base Device;Right editing panel;INV12;Device label
+L1;1653;Assign a custom name to a Gateway Device;Right editing panel;INV12;Device label
+L1;1465;Visualise the attributes of a group of devices;Right editing panel;INV13;Device ID
+L0;1836;SDK_Node Selection;Navigation Panel;DC1;Tree view single device selection
+L0;1834;SDK_Zone TreeView;Navigation Panel;DC2;Tree view zone selection
